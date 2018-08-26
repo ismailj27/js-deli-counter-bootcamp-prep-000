@@ -4,13 +4,11 @@ function takeANumber(cLine,name) {
 }
 
 
-
 function nowServing(katzDeliLine) {
-  do {
-    return "Currently serving " + katzDeliLine[0] + "." 
+  while (katzDeliLine.length > 0) {
     katzDeliLine.splice(0,1);
+    return "Currently serving " + katzDeliLine[0] + "." 
   }
-  while (katzDeliLine.length > 0);
   while (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!"
   }
