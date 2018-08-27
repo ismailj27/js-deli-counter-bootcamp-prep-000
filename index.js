@@ -16,7 +16,7 @@ function nowServing(katzDeliLine, name) {
 function currentLine(line) {
   var aString = "The line currently "
   var i;
-  for (i = line.length; i > 0; i--) {
+  for (i = 0; line.length > 0; i++) {
     var name = line[i]
     aString = aString.concat(name);
   }
