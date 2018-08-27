@@ -17,12 +17,10 @@ function currentLine(line) {
   var aString = "The line currently "
   
   for (i = line.length, i > 0, i--); {
-    aString.concat(line[-i])
+    aString.concat(line[i]);
   }
-  if (line.length > 0) {
-    return aString
-  }
-  else {
+  return aString
+  while (line.length === 0) {
   return "The line is currently empty."
   }
 }
