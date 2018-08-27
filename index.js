@@ -17,7 +17,7 @@ function currentLine(line) {
   aString = "The line currently ";
   for (i = 0; line.length > 0; i++) {
     var name = line[0]
-    aString = aString.concat(name);
+    var aString = aString.concat(name);
     line.splice(0,1)
   }
   return aString
