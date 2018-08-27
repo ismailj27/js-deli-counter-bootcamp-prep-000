@@ -23,7 +23,7 @@ function currentLine(line) {
     line.splice(0,1)
   }
   return aString
-  while (line.length === 0) {
+  if (line.length === 0) {
   return "The line is currently empty."
   }
 }
