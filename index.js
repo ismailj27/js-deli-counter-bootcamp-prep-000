@@ -19,5 +19,6 @@ function currentLine(line) {
   for (i = line.length, i > 0, i--) {
     return "The line is currently:" + "1. " + line[0] +"2." + line[1]
   }
+  
   return "The line is currently empty."
 }
