@@ -19,7 +19,7 @@ function currentLine(line) {
   var i;
   for (i = 0; line.length > 0; i++) {
     var name = line[0]
-    var aString = aString.concat((i+2), ". ",name, ", ");
+    var aString = aString.concat(", ",(i+2), name, ", ");
     line.splice(0,1)
   }
   return aString
